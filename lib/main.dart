@@ -29,7 +29,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
  Future fetchData() async{
-    final response=await http.get('http://192.168.43.126/conn.php');
+    final response=await http.get('http://your ip address/conn.php');
     return jsonDecode(response.body);
     
   }
