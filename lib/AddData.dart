@@ -17,7 +17,7 @@ TextEditingController mobile=TextEditingController();
 bool edit=false;
   void addData(){
     if(edit){
-      String url="http://192.168.43.126/update.php";
+      String url="http://your ip address/update.php";
      http.post(url, body:{
       'rollno':widget.list[widget.index]['rollno'],
       'firstname':firstname.text,
@@ -26,7 +26,7 @@ bool edit=false;
     });
     }
     else{
-      String url="http://192.168.43.126/AddData.php";
+      String url="http://your ip address/AddData.php";
      http.post(url, body:{
       'firstname':firstname.text,
       'lastname':lastname.text,
