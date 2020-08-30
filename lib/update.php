@@ -5,4 +5,5 @@ $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
 $mobile=$_POST['mobile'];
 $con->query("UPDATE Employee SET firstname='".$firstname."',lastname='".$lastname."',mobile='".$mobile."' WHERE rollno='".$rollno."'");
+$con->query("SELECT * FROM Employee");
 ?>
