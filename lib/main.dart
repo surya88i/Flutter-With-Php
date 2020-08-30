@@ -75,9 +75,9 @@ void initState() {
                       child: Icon(Icons.delete_outline),
                       onTap: (){
                         setState(() {
-                          String url='http://192.168.43.126/delete.php';
+                          String url='http://your ip address/delete.php';
                           http.post(url,body:{
-                            'rollno':list[index].rno,
+                            'rollno':list[index]['rollno'],
                           });
                         });
                       },
